@@ -26,9 +26,6 @@ file_put_contents("/var/www/html/index.html", $htmlContent);
 
     <?php include 'aside.php' ?>
     <main>
-    SUBNETID=$(cat /sys/devices/virtual/dmi/id/board_asset_tag)
-echo '
-<h1>This instance is in the subnet wih ID: SUBNETID </h1>' 
       <h1> Bienvenue sur la page test CBI - Cote d'Ivoire</h1>
       <div class="cards">
           <div class="card">
