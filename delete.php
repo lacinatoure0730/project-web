@@ -28,7 +28,7 @@
 
             // Delete the client from the database when confirmation is received
             if (isset($_GET['confirm']) && $_GET['confirm'] == 'yes') {
-                $stmt = $pdo->prepare("DELETE FROM Client WHERE id = ?");
+                $stmt = $pdo->prepare("DELETE FROM client WHERE id = ?");
                 $stmt->execute([$client_id]);
                 header("Location: liste.php");
                 exit;
